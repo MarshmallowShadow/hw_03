@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* 기본 형식 */
+html {
+	font-family: "맑은고딕";
+	font-size: 17px;
+}
+
+/* h1, h2, h3 스타일 */
+h1 {
+	font-family: "궁서";
+	font-size: 30px;
+	letter-spacing: 15px;
+}
+h2 { font-size: 25px; }
+h3 { font-size: 20px; }
+
+/* 대체적 스타일 클라스들 */
+.under { text-decoration: underline; }
+.ita { font-style: italic; }
+.bold { font-weight: bold }
+.red { color: #ff0000; }
+.green { color:#00ff00; }
+.blue { color: #0000ff; }
+
+/* "2.역사" */
+.back-gray { background-color: #D9D9D9; }
+h3~p { text-indent: 30px; }
+
+/* ul */
+ul { list-style-type: square; }
+
+/* ol 불릿 삭제 */
+ol { list-style-type: none; }
+
+/* 테이블 */
+thead { background-color: #C8EBFA; }
+tbody>tr:hover { background-color: #EDD3ED; }
+/* 아래 황목 모든 테이블에 둘쨋줄 적용 중, 다른 테이블 추가 되면 수정 필수 또는 클라스 추가 필수 */
+table td+td { text-align: right; }
+table td+td:before { content:"약 " }
+table td+td:after { content:" (Mb/초)" }
+table a { color: #000000; text-decoration: none; }
+table a:hover { color: #0000FF; text-decoration: underline; }
+table a:active { color:#0000FF; text-decoration: underline; }
+table a:link { color: #0000FF; text-decoration: underline; }
+table a:visited { color: #000000; }
